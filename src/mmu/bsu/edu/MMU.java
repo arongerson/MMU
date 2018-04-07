@@ -26,6 +26,7 @@ public class MMU {
 					requestedFrames[requestedIndex++] = frame; 
 				}
 			}
+			numberOfFreeFrames -= numberOfFrames;
 			return requestedFrames;
 		}
 		return null;
@@ -37,5 +38,11 @@ public class MMU {
 
 	public int getNumberOfFreeFrames() {
 		return numberOfFreeFrames;
+	}
+	
+	public void printFreeFrames() {
+		for (Frame frame : frames) {
+			System.out.println(frame.getNumber());
+		}
 	}
 }

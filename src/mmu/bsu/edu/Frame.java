@@ -7,7 +7,7 @@ public class Frame {
 	
 	public Frame(int number) {
 		this.number = number;
-		this.free = false;
+		this.free = true;
 	}
 	
 	public boolean isFree() {
